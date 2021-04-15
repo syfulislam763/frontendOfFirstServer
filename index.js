@@ -90,7 +90,7 @@ class Users {
             })
             .catch(e => console.log(e.message))
         
-        window.location.reload();
+       // window.location.reload();
     }
 }
 
