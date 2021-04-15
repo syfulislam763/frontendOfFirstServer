@@ -19,7 +19,7 @@ class Users {
 
     
     handleFormSubmit = (e, url) => {
-        e.preventDefault();
+        //e.preventDefault();
         //https://secure-sea-04829.herokuapp.com/users
         let newUser = JSON.stringify(this.newUser)
         console.log(newUser);
@@ -90,7 +90,7 @@ class Users {
             })
             .catch(e => console.log(e.message))
         
-        //window.location.reload();
+        window.location.reload();
     }
 }
 
