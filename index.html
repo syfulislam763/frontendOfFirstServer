@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Side</title>
+    <style>
+        .header{
+            width: 50%;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .header h1{
+            color: indianred;
+        }
+        .container{
+            width: 70%;
+            margin: 0px auto;
+            display: flex;
+            justify-content: space-around;
+            flex-flow: row wrap;
+        }
+        .users{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        .user{
+            border: 1px solid wheat;
+            border-radius: 5px;
+            height: 110px;
+            width: 100%;
+            background-color: lightblue;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .user h3,p{
+            margin: 0px;
+            padding: 0px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Create, Read and Delete User</h1>
+    </div>
+
+    <div class="container">
+
+        <div id="users" class="users">
+            <!-- <div class="user">
+                <h3>User name</h3>
+                <p><strong>Email</strong></p>
+                <p><strong>Gender</strong></p>
+            </div> -->
+        </div>
+
+        <div class="create-user">
+            <h2>Create new user</h2>
+
+            <form id="form">
+
+                <label><strong>First Name:</strong></label><br/>
+                <input id="firstName" name="first_name" type="text" /><br/><br/>
+
+                <label><strong>Last Name:</strong></label><br/>
+                <input id="lastName" name="last_name" type="text" /><br/><br/>
+
+                <label><strong>E-Mail:</strong></label><br/>
+                <input id="email" type="email" name="email" /><br/><br/>
+
+                <label><strong>Select Gender</strong></label><br/>
+                <!-- <input type="radio" value="male" />Male<br/> 
+                <input type="radio" value="female" />Female<br/>
+                <input type="radio" value="other" />Other<br/> -->
+                <select name="gender" id="selectOption">
+                    <option>---------</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <br/><br/>
+
+                <button type="submit">Create user</button>
+            </form>
+        </div>
+
+    </div>
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>
